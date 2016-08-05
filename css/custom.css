@@ -1,3 +1,8 @@
+body {
+/*	background: #222;
+	color: #fffcf5;*/
+}
+
 ul {
 	list-style: none;
 	margin: 0;
@@ -11,28 +16,34 @@ li {
 
 a {
 	text-transform: uppercase;
-    /*font-size: 11px;*/
     font-weight: 600;
     letter-spacing: .2rem;
     margin-right: 35px;
     text-decoration: none;
     line-height: 6.5rem;
     color: #222;
+    /*color: #fffcf5;*/
 }
 
-.b1 {
-	background-image: url('../assets/b1.jpg');
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	height: 20rem;
-	width: 20rem;
+.touch-screen-nav {
+	display: none;
 }
 
 .img-link {
 	display: block;
 	margin-top: 10px;
+}
+
+.img-link img {
+	width: 4rem;
+	border-radius: 5px;
+	display: block;
+	margin: auto;
+}
+
+
+.carousel {
+	position: relative;
 }
 
 .carousel img {
@@ -41,9 +52,75 @@ a {
 	width: auto\9; /* ie8 */
 }
 
-a img {
-	width: 4rem;
-	border-radius: 5px;
+.arrow-link {
 	display: block;
-	margin: auto;
+}
+
+.arrow {
+  width: 0; 
+  height: 0;
+  border-top: 3rem solid transparent;
+  border-bottom: 3rem solid transparent;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.right {
+  border-left: 3rem solid green;
+  right: 1rem;
+}
+
+.left {
+  border-right: 3rem solid blue;   
+  left: 1rem;
+}
+
+.artist-info {
+	position: absolute;
+    right: 1rem;
+    background: white;
+    border-style: inset;
+    top: 1rem;
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+}
+
+.navbar-item:hover > .popover {
+	display: block;
+}
+
+.popover:active {
+	display: block;
+}
+/* Popover */
+.popover {
+	z-index: 1;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	border: 1px solid #eee;
+	border-radius: 4px;
+	top: 92%;
+	left: -50%;
+	-webkit-filter: drop-shadow(0 0 6px rgba(0,0,0,.1));
+	-moz-filter: drop-shadow(0 0 6px rgba(0,0,0,.1));
+	filter: drop-shadow(0 0 6px rgba(0,0,0,.1));
+}
+
+footer {
+    text-align: center;
+}
+
+@media (max-width: 640px) {
+	.navbar-list {
+		display: none;
+	}
+	.touch-screen-nav {
+		display: block;
+	}
 }
