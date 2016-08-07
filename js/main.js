@@ -16,6 +16,7 @@ var index = 0;
 
 document.querySelectorAll('.arrow').forEach(function (el) {
 	el.addEventListener('click', function (e) { 
+		alert('yo');
 		e.preventDefault();
 		if (e.currentTarget.classList.contains('left')) {
 			index--;
