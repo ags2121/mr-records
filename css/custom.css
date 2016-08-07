@@ -119,13 +119,19 @@ a.popover-link {
 
 .artist-info {
 	position: absolute;
-    right: 1rem;
-    background: white;
-    border-style: inset;
-    top: 1rem;
-    margin: 0;
-    text-transform: none;
-    padding: 4px;
+	right: 1rem;
+	background: rgba(255, 255, 255, 0.69);
+	border-style: dotted;
+	top: 1rem;
+	margin: 0;
+	border-width: 2px;
+	text-transform: none;
+	padding: 6px;
+	border-radius: 5px;
+}
+
+a.artist-info:hover {
+	color: initial;
 }
 
 h1, h2, h3, h4, h5 {
