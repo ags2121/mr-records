@@ -34,3 +34,5 @@ document.querySelectorAll('.arrow').forEach(function (el) {
 		document.querySelector('.carousel .artist-image').src = 'assets/' + artists[index].imageFile;
 	});
 });
+
+alert('JS?');
