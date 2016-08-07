@@ -1,42 +1,55 @@
 body {
-/*	background: #222;
-	color: #fffcf5;*/
+    font-family: monospace;
+    font-size: 2rem;
 }
 
 ul {
 	list-style: none;
-	margin: 0;
 }
 
-li {
-	position: relative;
-	float: left;
+.navbar-list {
+	list-style: none;
+	margin: 0;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+}
+
+.navbar-item {
+    position: relative;
+    float: left;
+    margin-bottom: 0;
+    height: 6rem;
+}
+
+.popover-list {
+	margin: 1rem;
+    padding: 0;
+}
+
+.popover-item {
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+.popover-item:last-child {
 	margin-bottom: 0;
-	height: 6rem;
+}
+
+.popover-link {
+	margin: 0;
+	line-height: 2rem;
 }
 
 a {
-	text-transform: uppercase;
+/*	text-transform: uppercase;*/
     font-weight: 600;
     letter-spacing: .2rem;
     margin-right: 35px;
     text-decoration: none;
     line-height: 6.5rem;
-    color: #222;
-    /*color: #fffcf5;*/
+    color: #222;   
 }
-
-.touch-screen-nav {
-	display: none;
-}
-
-.touch-screen-nav li:nth-child(2) {
-	float: none;
-}
-
-/*.touch-screen-nav .logo:parent {
-	float: none;
-}*/
 
 .box-shadow-menu {
 	border-bottom: 17px double black;
@@ -104,7 +117,7 @@ a {
     padding: 4px;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
 	margin: 0;
 }
 
@@ -127,21 +140,22 @@ h1, h2, h3, h4 {
 	border-radius: 4px;
 	top: 92%;
 	left: -50%;
-	-webkit-filter: drop-shadow(0 0 6px rgba(0,0,0,.1));
-	-moz-filter: drop-shadow(0 0 6px rgba(0,0,0,.1));
-	filter: drop-shadow(0 0 6px rgba(0,0,0,.1));
 }
 
 .header {
 	padding: 0;
+	margin: 0;
 	width: 100%;
+	max-width: none;
 }
 
 pre {
-	font-size: 1rem;
-	margin: 0;
-	font-family: monospace;
-	line-height: 1rem;
+	font-size: 8px;
+    margin: 0;
+    font-family: monospace;
+    line-height: 1rem;
+    display: inline-block;
+    margin-left: 2rem;
 }
 blockquote {
 	 margin: 0;
@@ -151,18 +165,32 @@ footer {
     text-align: center;
 }
 
-.navbar-list {
-	display: none;
-}
-.touch-screen-nav {
-	display: block;
+@media (max-width: 905px) {
+	.navbar-list {
+		display: block;
+	    position: inherit;
+        text-align: center;
+	}
+	.navbar-item {
+		float: none;
+		display: inline-block;
+	}	
+	li:last-child a {
+		margin-right: 0;
+	}
+	pre {
+		display: block;
+		text-align: center;
+		margin: 0;
+	}
 }
 
 @media (max-width: 640px) {
-	.navbar-list {
-		display: none;
-	}
-	.touch-screen-nav {
-		display: block;
+
+}
+
+@media (max-width: 508px) {
+	a {
+		margin: 0;
 	}
 }
