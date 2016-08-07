@@ -14,9 +14,10 @@ var artists = [
 ];
 var index = 0;
 
-document.querySelectorAll('.arrow').forEach(function (el) {
+var arrows = document.querySelectorAll('.arrow');
+for (i = 0; i < arrows.length; i++) { 
 	document.querySelector('footer').innerHTML = "BUTT";
-	el.addEventListener('click', function (e) { 
+	arrows[i].addEventListener('click', function (e) { 
 		e.preventDefault();
 		if (e.currentTarget.classList.contains('left')) {
 			index--;
@@ -32,4 +33,4 @@ document.querySelectorAll('.arrow').forEach(function (el) {
 		document.querySelector('.carousel .artist-name').innerHTML = artists[index].name;
 		document.querySelector('.carousel .artist-image').src = 'assets/' + artists[index].imageFile;
 	});
-});
+}
