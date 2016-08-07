@@ -36,3 +36,5 @@ document.querySelectorAll('.arrow').forEach(function (el) {
 });
 
 alert('JS?');
+
+document.querySelector('footer').innerHTML = "BUTT";
