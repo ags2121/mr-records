@@ -15,6 +15,7 @@ var artists = [
 var index = 0;
 
 document.querySelectorAll('.arrow').forEach(function (el) {
+	alert('load');
 	el.addEventListener('click', function (e) { 
 		alert('yo');
 		e.preventDefault();
