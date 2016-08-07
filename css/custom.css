@@ -7,6 +7,11 @@ ul {
 	list-style: none;
 }
 
+a {
+	color: #222;
+	text-decoration: none;
+}
+
 .navbar-list {
 	list-style: none;
 	margin: 0;
@@ -20,6 +25,13 @@ ul {
     float: left;
     margin-bottom: 0;
     height: 6rem;
+}
+
+.navbar-item a {
+	font-weight: 600;
+	letter-spacing: .2rem;
+	margin-right: 35px;
+	line-height: 6.5rem;
 }
 
 .popover-list {
@@ -41,15 +53,14 @@ ul {
 	line-height: 2rem;
 }
 
-a {
-/*	text-transform: uppercase;*/
+/*a {
     font-weight: 600;
     letter-spacing: .2rem;
     margin-right: 35px;
     text-decoration: none;
     line-height: 6.5rem;
     color: #222;   
-}
+}*/
 
 .box-shadow-menu {
 	border-bottom: 17px double black;
@@ -140,6 +151,7 @@ h1, h2, h3, h4, h5 {
 	border-radius: 4px;
 	top: 92%;
 	left: -50%;
+	right: -23%;
 }
 
 .header {
@@ -185,12 +197,8 @@ footer {
 	}
 }
 
-@media (max-width: 640px) {
-
-}
-
 @media (max-width: 508px) {
-	a {
+	.navbar-item a {
 		margin: 0;
 	}
 }
