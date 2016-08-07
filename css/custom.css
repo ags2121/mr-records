@@ -48,7 +48,7 @@ a {
 	margin-bottom: 0;
 }
 
-.popover-link {
+a.popover-link {
 	margin: 0;
 	line-height: 2rem;
 }
