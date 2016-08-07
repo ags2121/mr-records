@@ -16,7 +16,6 @@ var index = 0;
 
 var arrows = document.querySelectorAll('.arrow');
 for (i = 0; i < arrows.length; i++) { 
-	document.querySelector('footer').innerHTML = "BUTT";
 	arrows[i].addEventListener('click', function (e) { 
 		e.preventDefault();
 		if (e.currentTarget.classList.contains('left')) {
