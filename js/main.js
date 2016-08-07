@@ -18,6 +18,7 @@ var arrows = document.querySelectorAll('.arrow');
 for (i = 0; i < arrows.length; i++) { 
 	arrows[i].addEventListener('click', function (e) { 
 		e.preventDefault();
+		var currentImage = document.querySelectorAll('.carousel .artist-image')[index];
 		if (e.currentTarget.classList.contains('left')) {
 			index--;
 			if (index < 0) {
@@ -29,7 +30,14 @@ for (i = 0; i < arrows.length; i++) {
 				index = 0;
 			}
 		}
+
 		document.querySelector('.carousel .artist-name').innerHTML = artists[index].name;
-		document.querySelector('.carousel .artist-image').src = 'assets/' + artists[index].imageFile;
+
+		currentImage.classList.add('offscreen');
+		currentImage.classList.remove('onscreen');
+
+		nextImage = document.querySelectorAll('.carousel .artist-image')[index];
+		nextImage.classList.add('onscreen');
+		nextImage.classList.remove('offscreen');
 	});
 }

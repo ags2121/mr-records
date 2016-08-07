@@ -93,6 +93,11 @@ a.popover-link {
 	width: auto\9; /* ie8 */
 }
 
+.offscreen {
+	position: absolute;
+    right: 100%;
+}
+
 .arrow-link {
 	display: block;
 }
