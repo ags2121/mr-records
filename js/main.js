@@ -13,9 +13,9 @@ var artists = [
 	}
 ];
 var index = 0;
-document.querySelector('footer').innerHTML = "BUTT";
 
 document.querySelectorAll('.arrow').forEach(function (el) {
+	document.querySelector('footer').innerHTML = "BUTT";
 	el.addEventListener('click', function (e) { 
 		e.preventDefault();
 		if (e.currentTarget.classList.contains('left')) {
