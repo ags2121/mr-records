@@ -14,7 +14,7 @@ var artists = [
 ];
 var index = 0;
 
-document.querySelectorAll('.arrow-link').forEach(function (el) {
+document.querySelectorAll('.arrow').forEach(function (el) {
 	el.addEventListener('click', function (e) { 
 		e.preventDefault();
 		if (e.currentTarget.classList.contains('left')) {
@@ -32,4 +32,3 @@ document.querySelectorAll('.arrow-link').forEach(function (el) {
 		document.querySelector('.carousel .artist-image').src = 'assets/' + artists[index].imageFile;
 	});
 });
-

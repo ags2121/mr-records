@@ -98,13 +98,14 @@ a.popover-link {
 }
 
 .arrow {
-  width: 0; 
-  height: 0;
-  border-top: 3rem solid transparent;
-  border-bottom: 3rem solid transparent;
-  top: 50%;
-  position: absolute;
-  transform: translateY(-50%);
+	cursor: pointer; 
+	width: 0; 
+	height: 0;
+	border-top: 3rem solid transparent;
+	border-bottom: 3rem solid transparent;
+	top: 50%;
+	position: absolute;
+	transform: translateY(-50%);
 }
 
 .right {
