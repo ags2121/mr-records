@@ -95,7 +95,7 @@ a.popover-link {
 
 .offscreen {
 	position: absolute;
-    left: 100%;
+    left: -999em;
 }
 
 .arrow-link {
