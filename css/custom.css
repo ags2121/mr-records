@@ -214,3 +214,12 @@ footer {
 		margin: 0;
 	}
 }
+
+@media (max-width: 370px) {
+	.navbar-item a {
+		font-size: 1.2rem;
+	}
+	pre {
+		font-size: 7px;
+	}
+}
