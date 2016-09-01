@@ -203,9 +203,7 @@ pre {
     font-family: monospace;
     line-height: 1rem;
     display: inline-block;
-    padding-bottom: 4px;
-    padding: 8px;
-    padding-top: 0;
+    padding-left: 8px;
 }
 blockquote {
 	 margin: 0;
@@ -234,6 +232,7 @@ footer {
 		margin: 0;
 		border: 0 solid #fff;
 		border-bottom-width: 3px;
+     	padding-bottom: 8px; 
 	}
 }
 
