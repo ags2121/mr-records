@@ -130,11 +130,12 @@ a.popover-link {
 .artist-info {
 	position: absolute;
 	right: 1rem;
-	background: rgba(255, 255, 255, 0.69);
-	border-style: dotted;
+	/*background: rgba(255, 255, 255, 0.50);*/
+	background: rgba(229, 238, 251, 0.60);
+	/*border-style: dotted;*/
+	border: 3px solid #fff;
 	top: 1rem;
 	margin: 0;
-	border-width: 2px;
 	text-transform: none;
 	padding: 6px;
 	border-radius: 5px;
@@ -164,7 +165,7 @@ h1, h2, h3, h4, h5 {
 	top: 0;
 	left: 0;
 	/*background: #fff;*/
-	border: 2px solid #fff;
+	border: 3px solid #fff;
 	border-radius: 4px;
 	top: 92%;
 	left: -50%;
@@ -176,7 +177,20 @@ h1, h2, h3, h4, h5 {
 	margin: 0;
 	width: 100%;
 	max-width: none;
+}
+
+html {
 	background-color: rgb(229, 238, 251);
+}
+
+.section-title {
+	margin-bottom: 1rem;
+}
+.news-list li {
+	padding: 1rem;
+    border-color: #fff;
+    border-width: 1rem;
+    border-style: ridge;
 }
 
 pre {
@@ -186,12 +200,12 @@ pre {
     font-family: monospace;
     line-height: 1rem;
     display: inline-block;
-    margin-left: 2rem;
-    border: 2px solid #fff;
+    /*margin-left: 2rem;*/
+    border: 3px solid #fff;
     border-top-width: 0;
-    border-right-width: 0;
+    /*border-right-width: 0;*/
     border-left-width: 0;
-    /*border-radius: 4px;*/
+    border-bottom-right-radius: 4px;
     padding: 8px;
     padding-top: 0;
 }
@@ -220,6 +234,9 @@ footer {
 		display: block;
 		text-align: center;
 		margin: 0;
+		border-left-width: 0;
+		border-right-width: 0;
+		border-bottom-right-radius: 0;
 	}
 }
 

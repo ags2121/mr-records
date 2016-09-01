@@ -42,5 +42,18 @@ for (i = 0; i < arrows.length; i++) {
 	});
 }
 
+
 // TODO: set year 
 // document.querySelector('.date').text()
+
+var html = ""
+news.forEach(function(el) { 
+	newsItem = 
+		"<li>" +
+			"<div class='date'>" + el.date + "</div>" +
+			"<div class='title'>" + el.title + "</div>" +
+			"<div class='body'>" + el.body + "</div>" +
+		"</li>";
+	html += newsItem;
+})
+document.querySelector('.news-list').innerHTML = html;
