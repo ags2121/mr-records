@@ -188,25 +188,22 @@ html {
 }
 .news-list li {
 	padding: 1rem;
-    border-color: #fff;
-    border-width: 1rem;
-    border-style: ridge;
+    border: 3px solid #fff;
+    border-radius: 4px;
+}
+
+.news-list li a {
+	font-weight: 900;
 }
 
 pre {
 	font-size: 8px;
 	font-weight: 900;
     margin: 0;
-    /*margin-top: 6px;*/
     font-family: monospace;
     line-height: 1rem;
     display: inline-block;
-    /*margin-left: 2rem;*/
-    border: 3px solid #fff;
-    border-top-width: 0;
-    /*border-right-width: 0;*/
-    border-left-width: 0;
-    border-bottom-right-radius: 4px;
+    padding-bottom: 4px;
     padding: 8px;
     padding-top: 0;
 }
@@ -235,9 +232,8 @@ footer {
 		display: block;
 		text-align: center;
 		margin: 0;
-		border-left-width: 0;
-		border-right-width: 0;
-		border-bottom-right-radius: 0;
+		border: 0 solid #fff;
+		border-bottom-width: 3px;
 	}
 }
 

@@ -7,6 +7,6 @@ var news = [
 {
 	title: "CR-39 releases \"Velcro Avenue\".",
 	date: "2016-10-01",
-	body: "CR-39 debuts his first release for Mr. Records, a gentle journey into mediated smoothness. Listen <a href=\"\">here<\/a>."
+	body: "CR-39 debuts his first release for Mr. Records, a journey into mediated smoothness. Listen <a href=\"\">here<\/a>."
 }
 ]
