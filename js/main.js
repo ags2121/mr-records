@@ -41,3 +41,6 @@ for (i = 0; i < arrows.length; i++) {
 		nextImage.classList.remove('offscreen');
 	});
 }
+
+// TODO: set year 
+// document.querySelector('.date').text()
