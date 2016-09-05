@@ -141,6 +141,10 @@ a.popover-link {
 	border-radius: 5px;
 }
 
+.artist-name {
+	margin: 0;
+}
+
 a.artist-info:hover {
 	color: initial;
 }
