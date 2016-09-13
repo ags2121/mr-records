@@ -28,12 +28,12 @@ artists.forEach(function(artist, i) {
 	if (i === 0) {
 		carouselHtml += 
 		'<a class="artist-info" href="#artists/' + toId(artist.name) + '">' +
-		  '<h6 class="artist-name">'+ artist.name + '</h6>' +
+		  '<small class="artist-name">'+ artist.name + '</small>' +
 		'</a>';
 	}
 
 	carouselHtml += 
-	'<a class="artist-image ' + ((i === 0) ? "onscreen" : "offscreen") + '" href="#artists/'+ artist.id +'">' + 
+	'<a class="artist-image ' + ((i === 0) ? "onscreen" : "offscreen") + '" href="#artists/'+ toId(artist.name) +'">' + 
 		'<img src="assets/'+ artist.imageFile + '"/>' + 
 	'</a>';
 
