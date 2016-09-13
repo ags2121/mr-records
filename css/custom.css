@@ -11,6 +11,7 @@ body {
 	margin-bottom: 3rem;
 }
 
+
 .line:after {
 	content: '';
     width: 0;
@@ -24,15 +25,17 @@ body {
 
 .line.left:after {
 	left: 0;
-	border-color: blue;
+	/*border-color: blue;*/
+	border-color: white;
 }
 
 .line.right:after {
 	right: 0;
-	border-color: green;
+	/*border-color: green;*/
+	border-color: white;
 }
 
-.container.outer:after {
+/*.container.outer:after {
     content: '';
     width: 50%;
     position: absolute;
@@ -45,7 +48,8 @@ body:after {
     position: absolute;
     border: 2px solid green;
     right: 0;
-}
+}*/
+
 
 ul {
 	list-style: none;
@@ -159,6 +163,11 @@ a.popover-link {
 	top: 50%;
 	position: absolute;
 	transform: translateY(-50%);
+}
+
+.block {
+    border: 3rem solid green;
+    right: 1rem;
 }
 
 .right {
