@@ -7,6 +7,46 @@ body {
 	margin-bottom: 2rem;
 }
 
+.carousel {
+	margin-bottom: 3rem;
+}
+
+.line:after {
+	content: '';
+    width: 0;
+    height: 97%;
+    position: absolute;
+    border: 2px solid;
+    /*top: 122px;*/
+    top: 3%;
+    z-index: -1;
+}
+
+.line.left:after {
+	left: 0;
+	border-color: blue;
+}
+
+.line.right:after {
+	right: 0;
+	border-color: green;
+}
+
+.container.outer:after {
+    content: '';
+    width: 50%;
+    position: absolute;
+    border: 2px solid blue;
+}
+
+body:after {
+    content: '';
+    width: 50%;
+    position: absolute;
+    border: 2px solid green;
+    right: 0;
+}
+
 ul {
 	list-style: none;
 }
@@ -181,7 +221,7 @@ h1, h2, h3, h4, h5, h6 {
 	right: -23%;
 }
 
-.header {
+.outer {
 	padding: 0;
 	margin: 0;
 	width: 100%;
@@ -269,7 +309,7 @@ footer {
 	li:last-child a {
 		margin-right: 0;
 	}
-	pre {
+	.header pre {
 		display: block;
 		text-align: center;
 		margin: 0;
