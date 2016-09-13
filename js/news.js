@@ -1,6 +1,6 @@
 var news = [
 {
-	title: "Aire-Tech - Single release for \"Juzt a Feelin'\"",
+	title: "Aire Tech - Single release for \"Juzt a Feelin'\"",
 	date: "2016-11-01",
 	body: "Just in time for the November holidays, Aire Tech drops a new track for the global community of listeners. Check it out <a href=\"\">here<\/a>."
 },

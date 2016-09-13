@@ -1,6 +1,32 @@
+// RELEASES
+var releases = [].concat.apply([], artists.map(function(el) { 
+	el.releases.forEach(function(r) {
+		r['artistName'] = el.name;
+	});
+	return el.releases;
+}));
 
-// TODO: set year 
-// document.querySelector('.date').text()
+// sort by release date desc
+releases.sort(
+	function compare(a, b) {
+	  if (a.year > b.year)
+	    return -1;
+	  if (a.year < b.year)
+	    return 1;
+	  return 0;
+	}
+);
+
+var releasesHtml = "";
+releases.forEach(function(r) {
+	releasesHtml +=
+	'<li class="one-third column">' +
+	  '<img src="assets/' + r.imageFile + '"/>' +
+	  '<div class="artist-name">' + r.artistName + '</div>' +
+	  '<div class="release-name">"' + r.name + '"</div>' +
+	'</li>';
+});
+document.querySelector('.release-list').innerHTML = releasesHtml;
 
 // NEWS
 var html = ""
@@ -43,7 +69,7 @@ artists.forEach(function(artist, i) {
 		'<li>' +
 			'<div class="row">' +
 			  '<img src="assets/' + rel.imageFile + '"/>' +
-			  '<div class="release-name">"'+ rel.name + '"</div>' +
+			  '<div class="release-name">'+ rel.name + '</div>' +
 			  '<div>' + rel.type + ' * ' + rel.year + ' * ' + rel.id + '</div>' +
 			'</div>'
 		'</li>';
@@ -121,3 +147,6 @@ for (i = 0; i < arrows.length; i++) {
 		nextImage.classList.remove('offscreen');
 	});
 }
+
+// TODO: set year 
+// document.querySelector('.date').text()

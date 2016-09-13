@@ -195,7 +195,7 @@ html {
 .section-title {
 	margin-bottom: 1rem;
 }
-.news-list li, .artist-list li {
+.news-list li, .artist-list li, .release-list li {
 	padding: 1rem;
     border: 3px solid #fff;
     border-radius: 4px;
@@ -217,6 +217,10 @@ html {
 	width: 100%;
 }
 
+.artist-list .release-name {
+	font-weight: 600;
+}
+
 .artist-section {
 	font-weight: 900;
 }
@@ -226,7 +230,11 @@ html {
 	text-align: center;
 }
 
-.release-name {
+.release-list img {
+    width: 100%;
+}
+
+.release-list .artist-name {
 	font-weight: 600;
 }
 
