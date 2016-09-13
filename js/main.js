@@ -1,19 +1,83 @@
-var artists = [
-	{
-		name : 'Derp City Blues',
-		imageFile : 'b1.jpg'
-	},
-	{
-		name: 'CR-39',
-		imageFile : 'b2.jpg'
-	},
-	{
-		name : 'Aire Tech',
-		imageFile : 'b3.jpg'
-	}
-];
-var index = 0;
 
+// TODO: set year 
+// document.querySelector('.date').text()
+
+// NEWS
+var html = ""
+news.forEach(function(el) { 
+	newsItem = 
+		"<li>" +
+			"<div class='date'>" + el.date + "</div>" +
+			"<div class='title'>" + el.title + "</div>" +
+			"<div class='body'>" + el.body + "</div>" +
+		"</li>";
+	html += newsItem;
+})
+document.querySelector('.news-list').innerHTML = html;
+
+// ARTISTS
+var artistPopoverHtml = "";
+var carouselHtml = "";
+var artistListHtml = "";
+artists.forEach(function(artist, i) {
+	artistPopoverHtml +=
+	'<li class="popover-item">' +
+  		'<a class="popover-link" href="#artists/'+ toId(artist.name) + '">' + artist.name + '</a>' +
+	'</li>';
+
+	if (i === 0) {
+		carouselHtml += 
+		'<a class="artist-info" href="#artists/' + toId(artist.name) + '">' +
+		  '<h6 class="artist-name">'+ artist.name + '</h6>' +
+		'</a>';
+	}
+
+	carouselHtml += 
+	'<a class="artist-image ' + ((i === 0) ? "onscreen" : "offscreen") + '" href="#artists/'+ artist.id +'">' + 
+		'<img src="assets/'+ artist.imageFile + '"/>' + 
+	'</a>';
+
+	artistReleases = "";
+	artist.releases.forEach(function(rel) {
+		artistReleases += 
+		'<li>' +
+			'<div class="row">' +
+			  '<img src="assets/' + rel.imageFile + '"/>' +
+			  '<div class="release-name">"'+ rel.name + '"</div>' +
+			  '<div>' + rel.type + ' * ' + rel.year + ' * ' + rel.id + '</div>' +
+			'</div>'
+		'</li>';
+	});
+	artistListHtml +=
+	'<li id="artists/' + toId(artist.name) + '">' +
+		'<h5>'+ artist.name + '</h5>' +
+		'<div class="row">' +
+		  '<img src="assets/'+  artist.imageFile + '"/>' +
+		'</div>' +
+		'<div class="row">' +
+		  '<div class="two-thirds column">' +
+		    '<h6 class="">about</h6>' +
+		    '<div>' + artist.about + '</div>' +
+		  '</div>' +
+		  '<div class="one-third column">' +
+		    '<h6 class="">releases</h6>' +
+		    '<ul class="release-list">' + artistReleases + '</ul>' +
+		  '</div>' +
+		'</div>' +
+	'</li>';
+});
+
+document.querySelector('.popover-list').innerHTML = artistPopoverHtml;
+document.querySelector('.carousel').innerHTML += carouselHtml;
+document.querySelector('.artist-list').innerHTML = artistListHtml;
+
+
+function toId(name) {
+	return name.split(" ").join("-");
+}
+
+// Carousel event handlers
+var index = 0;
 var arrows = document.querySelectorAll('.arrow');
 for (i = 0; i < arrows.length; i++) { 
 	arrows[i].addEventListener('click', function (e) { 
@@ -41,19 +105,3 @@ for (i = 0; i < arrows.length; i++) {
 		nextImage.classList.remove('offscreen');
 	});
 }
-
-
-// TODO: set year 
-// document.querySelector('.date').text()
-
-var html = ""
-news.forEach(function(el) { 
-	newsItem = 
-		"<li>" +
-			"<div class='date'>" + el.date + "</div>" +
-			"<div class='title'>" + el.title + "</div>" +
-			"<div class='body'>" + el.body + "</div>" +
-		"</li>";
-	html += newsItem;
-})
-document.querySelector('.news-list').innerHTML = html;

@@ -3,6 +3,10 @@ body {
     /*font-size: 2rem;*/
 }
 
+.container {
+	margin-bottom: 2rem;
+}
+
 ul {
 	list-style: none;
 }
@@ -149,8 +153,9 @@ a.artist-info:hover {
 	color: initial;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
 	margin: 0;
+    font-weight: 600;
 }
 
 .navbar-item:hover > .popover {
@@ -190,14 +195,31 @@ html {
 .section-title {
 	margin-bottom: 1rem;
 }
-.news-list li {
+.news-list li, .artist-list li {
 	padding: 1rem;
     border: 3px solid #fff;
     border-radius: 4px;
 }
 
-.news-list li a {
+.news-list li a, .artist-list li a {
 	font-weight: 900;
+}
+
+.artist-list img {
+	width: 100%;
+}
+
+.artist-section {
+	font-weight: 900;
+}
+
+.release-list {
+	margin: 1rem 0 0 0;
+	text-align: center;
+}
+
+.release-name {
+	font-weight: 600;
 }
 
 pre {
