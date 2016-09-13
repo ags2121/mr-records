@@ -7,8 +7,8 @@ var html = ""
 news.forEach(function(el) { 
 	newsItem = 
 		"<li>" +
-			"<div class='date'>" + el.date + "</div>" +
 			"<div class='title'>" + el.title + "</div>" +
+			"<small class='date'>Posted on " + formatDate(el.date) + "</small>" +
 			"<div class='body'>" + el.body + "</div>" +
 		"</li>";
 	html += newsItem;
@@ -74,6 +74,22 @@ document.querySelector('.artist-list').innerHTML = artistListHtml;
 
 function toId(name) {
 	return name.split(" ").join("-");
+}
+
+function formatDate(dateStr) {
+	var monthNames = [
+	  "January", "February", "March",
+	  "April", "May", "June", "July",
+	  "August", "September", "October",
+	  "November", "December"
+	];
+
+	var date = new Date(dateStr);
+	var day = date.getDate();
+	var monthIndex = date.getMonth();
+	var year = date.getFullYear();
+
+	return day + ' ' + monthNames[monthIndex] + ' ' + year
 }
 
 // Carousel event handlers

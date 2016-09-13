@@ -205,6 +205,14 @@ html {
 	font-weight: 900;
 }
 
+.news-list .title {
+	font-weight: 600;
+}
+
+.news-list .body {
+	margin-top: 1rem;
+}
+
 .artist-list img {
 	width: 100%;
 }
