@@ -23,7 +23,8 @@
 }
 
 .wwfm-pauseoff:before {
-	content: "\e908";
+	/*content:'\2590\A0\258C';*/
+	content:'\2759\A0\2759';
 }
 .wwfm-pauseon:before {
 	content: "\e90b";
@@ -35,8 +36,12 @@
 	content: "\e905";
 }
 
+.hide {
+	display: none;
+}
+
 .controls:hover {
-	color: red;
+	color: grey;
 	cursor: pointer;
 }
 
@@ -217,9 +222,17 @@ a.popover-link {
   right: 1rem;
 }
 
+.right:hover {
+	border-left-color: grey;
+}
+
 .left {
   border-right: 3rem solid blue;   
   left: 1rem;
+}
+
+.left:hover {
+	border-right-color: grey;
 }
 
 .artist-info {

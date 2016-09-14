@@ -26,13 +26,25 @@ releases.forEach(function(r) {
 		'<div class="release-name">"' + r.name + '"</div>' +
 		'<div class="controls">' +
 		'<i class="wwfm-play"></i>' +
-		'<!--       <i class="wwfm-play-home"></i>' +
-		'<i class="wwfm-pauseoff"></i> ' +
-		'<i class="wwfm-pauseon"></i> -->' +
+		// '<i class="wwfm-play-home"></i>' +
+		'<i class="wwfm-pauseoff hide"></i> ' +
+		// '<i class="wwfm-pauseon"></i> -->' +
 		'</div>' +
 	'</li>';
 });
 document.querySelector('.release-list').innerHTML = releasesHtml;
+
+var controls = document.querySelectorAll('.controls');
+for (i = 0; i < controls.length; i++) { 
+	controls[i].addEventListener('click', function (e) {
+		var pauseButton = e.currentTarget.querySelector('.wwfm-pauseoff');
+		var playButton = e.currentTarget.querySelector('.wwfm-play');
+		var isPauseButtonHidden = pauseButton.classList.contains('hide');
+
+		playButton.classList[isPauseButtonHidden ? 'add' : 'remove']('hide');
+		pauseButton.classList[isPauseButtonHidden ? 'remove' : 'add']('hide');
+	});
+}
 
 // NEWS
 var html = ""
