@@ -21,9 +21,15 @@ var releasesHtml = "";
 releases.forEach(function(r) {
 	releasesHtml +=
 	'<li class="one-third column">' +
-	  '<img src="assets/' + r.imageFile + '"/>' +
-	  '<div class="artist-name">' + r.artistName + '</div>' +
-	  '<div class="release-name">"' + r.name + '"</div>' +
+		'<img src="assets/' + r.imageFile + '"/>' +
+		'<div class="artist-name">' + r.artistName + '</div>' +
+		'<div class="release-name">"' + r.name + '"</div>' +
+		'<div class="controls">' +
+		'<i class="wwfm-play"></i>' +
+		'<!--       <i class="wwfm-play-home"></i>' +
+		'<i class="wwfm-pauseoff"></i> ' +
+		'<i class="wwfm-pauseon"></i> -->' +
+		'</div>' +
 	'</li>';
 });
 document.querySelector('.release-list').innerHTML = releasesHtml;
