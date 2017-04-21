@@ -1,7 +1,7 @@
 var artists = [
 	{
-		name : 'Aire Tech',
-		imageFile : 'b3.jpg',
+		name : 'Joydeep Thompson',
+		imageFile : 'b1.jpg',
 		about: 'A dope band that started from the bottom and now they\'re here.',
 		releases: [
 		{
@@ -14,8 +14,8 @@ var artists = [
 		]
 	},
 	{
-		name : 'Derp City Blues',
-		imageFile : 'b1.jpg',
+		name : 'Willem Porcelain',
+		imageFile : 'b2.png',
 		about: 'Central Germany\'s smoothest sounds since 2009.',
 		releases:[
 		{
@@ -29,7 +29,7 @@ var artists = [
 	},
 	{
 		name: 'CR-39',
-		imageFile : 'b2.jpg',
+		imageFile : 'b3.jpg',
 		about: 'Combining the raw elements of Raleigh\'s underground with the high minded ideals of the Transcendentalists, CR-39 dares you to dream big.',
 		releases: [
 		{
