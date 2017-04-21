@@ -167,4 +167,4 @@ for (i = 0; i < arrows.length; i++) {
 }
 
 // TODO: set year 
-// document.querySelector('.date').text()
+document.querySelectorAll('.copyright-date')[0].innerHTML = new Date().getFullYear();
