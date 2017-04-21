@@ -155,6 +155,7 @@ for (i = 0; i < arrows.length; i++) {
 			}
 		}
 
+		document.querySelector('.carousel .artist-info').href = '#artists/' + toId(artists[index].name);
 		document.querySelector('.carousel .artist-name').innerHTML = artists[index].name;
 
 		currentImage.classList.add('offscreen');

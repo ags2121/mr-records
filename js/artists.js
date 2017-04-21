@@ -28,7 +28,7 @@ var artists = [
 		]
 	},
 	{
-		name : 'Joydeep Thompson',
+		name : 'Joydeep Thomson',
 		imageFile : 'jt.jpg',
 		about: 'A dope band that started from the bottom and now they\'re here.',
 		releases: [
