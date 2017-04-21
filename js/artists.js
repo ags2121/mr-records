@@ -1,21 +1,21 @@
 var artists = [
 	{
-		name : 'Joydeep Thompson',
-		imageFile : 'b1.jpg',
-		about: 'A dope band that started from the bottom and now they\'re here.',
+		name: 'Face of Man',
+		imageFile : 'fom.png',
+		about: 'Combining the raw elements of Raleigh\'s underground with the high minded ideals of the Transcendentalists, CR-39 dares you to dream big.',
 		releases: [
 		{
-			name: 'Juzt a Feelin\'',
-			imageFile: 'r1.png',
-			type: 'Single',
+			name: 'Velcro Avenue',
+			imageFile: 'r3.gif',
+			type: 'LP',
 			year: 2016,
-			id: 'MR2'
+			id: 'MR3'
 		}
 		]
 	},
 	{
 		name : 'Willem Porcelain',
-		imageFile : 'b2.png',
+		imageFile : 'wp.png',
 		about: 'Central Germany\'s smoothest sounds since 2009.',
 		releases:[
 		{
@@ -28,16 +28,16 @@ var artists = [
 		]
 	},
 	{
-		name: 'CR-39',
-		imageFile : 'b3.jpg',
-		about: 'Combining the raw elements of Raleigh\'s underground with the high minded ideals of the Transcendentalists, CR-39 dares you to dream big.',
+		name : 'Joydeep Thompson',
+		imageFile : 'jt.jpg',
+		about: 'A dope band that started from the bottom and now they\'re here.',
 		releases: [
 		{
-			name: 'Velcro Avenue',
-			imageFile: 'r3.gif',
-			type: 'LP',
+			name: 'Juzt a Feelin\'',
+			imageFile: 'r1.png',
+			type: 'Single',
 			year: 2016,
-			id: 'MR3'
+			id: 'MR2'
 		}
 		]
 	}
