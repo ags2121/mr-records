@@ -29,7 +29,7 @@ var artists = [
 	},
 	{
 		name : 'CR-39',
-		imageFile : 'cr39.jpg',
+		imageFile : 'cr.jpg',
 		about: 'Central Germany\'s smoothest sounds since 2009.',
 		releases:[
 		{
