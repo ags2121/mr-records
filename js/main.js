@@ -18,21 +18,43 @@ releases.sort(
 );
 
 var releasesHtml = "";
-releases.forEach(function(r) {
-	releasesHtml +=
-	'<li class="one-third column">' +
-		'<img src="assets/' + r.imageFile + '"/>' +
-		'<div class="artist-name">' + r.artistName + '</div>' +
-		'<div class="release-name">"' + r.name + '"</div>' +
-		'<div class="controls">' +
-		'<i class="wwfm-play"></i>' +
-		// '<i class="wwfm-play-home"></i>' +
-		'<i class="wwfm-pauseoff hide"></i> ' +
-		// '<i class="wwfm-pauseon"></i> -->' +
-		'</div>' +
-	'</li>';
+partition(releases.slice(), 3).forEach(function(releases) {
+	var release_group = '<div class="row"><ul class="release-list">';
+	releases.forEach(function(r) {
+		release_group +=
+		'<li class="one-third column">' +
+			'<img src="assets/' + r.imageFile + '"/>' +
+			'<div class="artist-name">' + r.artistName + '</div>' +
+			'<div class="release-name">"' + r.name + '"</div>' +
+			'<div class="controls">' +
+			'<i class="wwfm-play"></i>' +
+			// '<i class="wwfm-play-home"></i>' +
+			'<i class="wwfm-pauseoff hide"></i> ' +
+			// '<i class="wwfm-pauseon"></i> -->' +
+			'</div>' +
+		'</li>';
+	});
+	release_group += '</ul></div>';
+	releasesHtml += release_group;
 });
-document.querySelector('.release-list').innerHTML = releasesHtml;
+document.querySelector('.releases').innerHTML = releasesHtml;
+
+// var releasesHtml = "";
+// releases.forEach(function(r) {
+// 	releasesHtml +=
+// 	'<li class="one-third column">' +
+// 		'<img src="assets/' + r.imageFile + '"/>' +
+// 		'<div class="artist-name">' + r.artistName + '</div>' +
+// 		'<div class="release-name">"' + r.name + '"</div>' +
+// 		'<div class="controls">' +
+// 		'<i class="wwfm-play"></i>' +
+// 		// '<i class="wwfm-play-home"></i>' +
+// 		'<i class="wwfm-pauseoff hide"></i> ' +
+// 		// '<i class="wwfm-pauseon"></i> -->' +
+// 		'</div>' +
+// 	'</li>';
+// });
+// document.querySelector('.release-list').innerHTML = releasesHtml;
 
 var controls = document.querySelectorAll('.controls');
 for (i = 0; i < controls.length; i++) { 
@@ -96,12 +118,8 @@ artists.forEach(function(artist, i) {
 	'<li id="artists/' + toId(artist.name) + '">' +
 		'<h5>'+ artist.name + '</h5>' +
 		'<div class="row">' +
-		  '<img src="assets/'+  artist.imageFile + '"/>' +
-		'</div>' +
-		'<div class="row">' +
 		  '<div class="two-thirds column">' +
-		    '<h6 class="">about</h6>' +
-		    '<div>' + artist.about + '</div>' +
+			'<img src="assets/'+  artist.imageFile + '"/>' +
 		  '</div>' +
 		  '<div class="one-third column">' +
 		    '<h6 class="">releases</h6>' +
@@ -136,6 +154,10 @@ function formatDate(dateStr) {
 	return day + ' ' + monthNames[monthIndex] + ' ' + year
 }
 
+function partition(array, n) {
+	return array.length ? [array.splice(0, n)].concat(partition(array, n)) : [];
+}
+
 // Carousel event handlers
 var index = 0;
 var arrows = document.querySelectorAll('.arrow');
@@ -167,5 +189,4 @@ for (i = 0; i < arrows.length; i++) {
 	});
 }
 
-// TODO: set year 
 document.querySelectorAll('.copyright-date')[0].innerHTML = new Date().getFullYear();

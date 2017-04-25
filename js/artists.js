@@ -28,6 +28,20 @@ var artists = [
 		]
 	},
 	{
+		name : 'CR-39',
+		imageFile : 'cr39.jpg',
+		about: 'Central Germany\'s smoothest sounds since 2009.',
+		releases:[
+		{
+			name: 'Factory Mann',
+			imageFile: 'r2.gif',
+			type: 'EP',
+			year: 2015,
+			id: 'MR1'
+		}
+		]
+	},
+	{
 		name : 'Joydeep Thomson',
 		imageFile : 'jt.jpg',
 		about: 'A dope band that started from the bottom and now they\'re here.',
