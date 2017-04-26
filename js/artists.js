@@ -5,11 +5,25 @@ var artists = [
 		about: 'Combining the raw elements of Raleigh\'s underground with the high minded ideals of the Transcendentalists, CR-39 dares you to dream big.',
 		releases: [
 		{
-			name: 'Velcro Avenue',
-			imageFile: 'r3.gif',
+			name: 'Bouquet',
+			imageFile: 'bouquet.jpg',
 			type: 'LP',
+			year: 2017,
+			id: 'MR5'
+		}
+		]
+	},
+	{
+		name : 'CR-39',
+		imageFile : 'cr.jpg',
+		about: 'Central Germany\'s smoothest sounds since 2009.',
+		releases:[
+		{
+			name: 'Gold Trim',
+			imageFile: 'gold_trim.jpg',
+			type: 'Single',
 			year: 2016,
-			id: 'MR3'
+			id: 'MR1'
 		}
 		]
 	},
@@ -21,23 +35,23 @@ var artists = [
 		{
 			name: 'Factory Mann',
 			imageFile: 'r2.gif',
-			type: 'EP',
-			year: 2015,
-			id: 'MR1'
+			type: 'Single',
+			year: 2016,
+			id: 'MR2'
 		}
 		]
 	},
 	{
-		name : 'CR-39',
-		imageFile : 'cr.jpg',
+		name : 'Living Situ',
+		imageFile : 'ls.jpg',
 		about: 'Central Germany\'s smoothest sounds since 2009.',
 		releases:[
 		{
-			name: 'Factory Mann',
-			imageFile: 'r2.gif',
-			type: 'EP',
-			year: 2015,
-			id: 'MR1'
+			name: 'Invitation To Phuket',
+			imageFile: 'r3.gif',
+			type: 'Single',
+			year: 2016,
+			id: 'MR3'
 		}
 		]
 	},
@@ -51,7 +65,7 @@ var artists = [
 			imageFile: 'r1.png',
 			type: 'Single',
 			year: 2016,
-			id: 'MR2'
+			id: 'MR4'
 		}
 		]
 	}
