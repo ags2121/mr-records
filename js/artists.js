@@ -33,8 +33,8 @@ var artists = [
 		about: 'Central Germany\'s smoothest sounds since 2009.',
 		releases:[
 		{
-			name: 'Factory Mann',
-			imageFile: 'r2.gif',
+			name: 'Loom',
+			imageFile: 'loom.jpg',
 			type: 'Single',
 			year: 2016,
 			id: 'MR2'
@@ -48,7 +48,7 @@ var artists = [
 		releases:[
 		{
 			name: 'Invitation To Phuket',
-			imageFile: 'r3.gif',
+			imageFile: 'r1.png',
 			type: 'Single',
 			year: 2016,
 			id: 'MR3'
@@ -61,8 +61,8 @@ var artists = [
 		about: 'A dope band that started from the bottom and now they\'re here.',
 		releases: [
 		{
-			name: 'Juzt a Feelin\'',
-			imageFile: 'r1.png',
+			name: 'Dolores',
+			imageFile: 'dolores.jpg',
 			type: 'Single',
 			year: 2016,
 			id: 'MR4'
