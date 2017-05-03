@@ -9,7 +9,9 @@ var artists = [
 			imageFile: 'bouquet.jpg',
 			type: 'LP',
 			year: 2017,
-			id: 'MR5'
+			id: 'MR1',
+			track: 'Same Dream',
+			tracks: 9
 		}
 		]
 	},
@@ -21,9 +23,11 @@ var artists = [
 		{
 			name: 'Gold Trim',
 			imageFile: 'gold_trim.jpg',
-			type: 'Single',
-			year: 2016,
-			id: 'MR1'
+			type: 'EP',
+			year: 2017,
+			id: 'MR2',
+			track: 'Moving Walkway (Has Ended)',
+			tracks: 3
 		}
 		]
 	},
@@ -33,11 +37,13 @@ var artists = [
 		about: 'Central Germany\'s smoothest sounds since 2009.',
 		releases:[
 		{
-			name: 'Loom',
+			name: 'Cratersoft',
 			imageFile: 'loom.jpg',
-			type: 'Single',
-			year: 2016,
-			id: 'MR2'
+			type: 'EP',
+			year: 2017,
+			id: 'MR3',
+			track: 'Loom',
+			tracks: 3
 		}
 		]
 	},
@@ -49,9 +55,11 @@ var artists = [
 		{
 			name: 'Invitation To Phuket',
 			imageFile: 'r1.png',
-			type: 'Single',
-			year: 2016,
-			id: 'MR3'
+			type: 'EP',
+			year: 2017,
+			id: 'MR4',
+			track: 'Max Berlin',
+			tracks: 3
 		}
 		]
 	},
@@ -63,9 +71,11 @@ var artists = [
 		{
 			name: 'Dolores',
 			imageFile: 'dolores.jpg',
-			type: 'Single',
-			year: 2016,
-			id: 'MR4'
+			type: 'EP',
+			year: 2017,
+			id: 'MR5',
+			track: 'Dolores',
+			tracks: 5
 		}
 		]
 	}

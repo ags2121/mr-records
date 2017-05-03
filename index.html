@@ -47,85 +47,97 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container outer">
-  <div class="header">
-  <a href="#">
-<pre>
+    <div class="header">
+      <a href="#">
+        <pre>
 ______  ___             ________                        _________       
 ___   |/  /_______      ___  __ \_____________________________  /_______
 __  /|_/ /__  ___/      __  /_/ /  _ \  ___/  __ \_  ___/  __  /__  ___/
 _  /  / / _  /___       _  _, _//  __/ /__ / /_/ /  /   / /_/ / _(__  ) 
 /_/  /_/  /_/ _(_)      /_/ |_| \___/\___/ \____//_/    \__,_/  /____/
-</pre>
-  </a>
-    <ul class="navbar-list">
-      <li class="navbar-item">
-        <a class="navbar-link" href="#releases">releases</a>
-      </li>
-      <li class="navbar-item">
-        <a class="navbar-link" href="#news">news</a>
-      </li>
-      <li class="navbar-item">
-        <a class="navbar-link" href="#artists">artists</a>
-        <div class="popover">
-          <ul class="popover-list"></ul>
-        </div>
-      </li>
-      <li class="navbar-item">
-        <a class="navbar-link" href="#shop">shop</a>          
-      </li>
-      <li class="navbar-item">
-        <a class="navbar-link" href="#about">about</a>
-      </li>
-    </ul>
+        </pre>
+      </a>
+      <ul class="navbar-list">
+        <li class="navbar-item">
+          <a class="navbar-link" href="#releases">releases</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="#news">news</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="#artists">artists</a>
+          <div class="popover">
+            <ul class="popover-list"></ul>
+          </div>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="#shop">shop</a>          
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="#about">about</a>
+        </li>
+      </ul>
     </div>
 
-  <!-- all pics need to be at least 1036px -->
-  <div class="carousel">    
-    <div class="arrow left"></div>
-    <div class="arrow right"></div>
-  </div>
+    <!-- all pics need to be at least 1036px -->
+    <div class="carousel">    
+      <div class="arrow left"></div>
+      <div class="arrow right"></div>
+    </div>
 
-  <div class="container" id="releases">
-    <h3 class="section-title">releases</h3>
-    <div class="releases"></div>
-  </div>
+    <div class="container" id="releases">
+      <h3 class="section-title">releases</h3>
+      <div class="releases"></div>
+    </div>
 
-  <div class="container" id="news">
-    <h3 class="section-title">news</h3>
-    <ul class="news-list"></ul>
-  </div>
+    <div class="container" id="news">
+      <h3 class="section-title">news</h3>
+      <ul class="news-list"></ul>
+    </div>
 
-  <div class="container" id="artists">
-    <h3 class="section-title">artists</h3>
-    <ul class="artist-list"></ul>
-  </div>
+    <div class="container" id="artists">
+      <h3 class="section-title">artists</h3>
+      <ul class="artist-list"></ul>
+    </div>
 
-  <div class="container" id="shop">
-    <h3 class="section-title">shop</h3>
-    <h6 class="loading">coming soon</h6>
-  </div>
+    <div class="container" id="shop">
+      <h3 class="section-title">shop</h3>
+      <h6 class="loading">coming soon</h6>
+    </div>
 
-  <div class="container" id="about">
-    <h3 class="section-title">about</h3>
-    <div>Mr. Records is the project of musicians and engineers Joydeep Thomson and Willem Porcelain. The label began in early 2016 as a home for decentralized listening communities.</div>
-  </div>
+    <div class="container" id="about">
+      <h3 class="section-title">about</h3>
+      <div>Mr. Records is the project of musicians and engineers Joydeep Thomson and Willem Porcelain. The label began in early 2016 as a home for decentralized listening communities.</div>
+    </div>
 
-  <footer>
-<a href="#">
-<pre>
+    <footer>
+      <a href="#">
+        <pre>
 ______  ___             ________                        _________       
 ___   |/  /_______      ___  __ \_____________________________  /_______
 __  /|_/ /__  ___/      __  /_/ /  _ \  ___/  __ \_  ___/  __  /__  ___/
 _  /  / / _  /___       _  _, _//  __/ /__ / /_/ /  /   / /_/ / _(__  ) 
 /_/  /_/  /_/ _(_)      /_/ |_| \___/\___/ \____//_/    \__,_/  /____/
-</pre>
-</a>
-    <div>© <small class="copyright-date">2016</small></div>
-    <script src="js/news.js"></script>
-    <script src="js/artists.js"></script>
-    <script src="js/main.js"></script>
-  </footer>
+        </pre>
+      </a>
+      <div>© <small class="copyright-date">2016</small></div>
+    </footer>
 
+  </div>
+  <div class="now-playing hidden">
+    <small>
+      <span class="song">Lavender</span> – 
+      <span class="artist">Face of Man</span> – 
+      <em><span class="album">Bouquet</span></em>
+    </small>
+  </div>
+
+  <audio></audio>
+
+  <!-- scripts -->
+  <script src="js/news.js"></script>
+  <script src="js/artists.js"></script>
+  <script src="js/main.js"></script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
