@@ -72,7 +72,7 @@ artists.forEach(function(artist, i) {
 	artistReleases = "";
 	artist.releases.forEach(function(rel) {
 		artistReleases += 
-		'<li>' +
+		'<li data-release="' + rel.id + '">' +
 			'<div class="row">' +
 			  '<img src="assets/' + rel.imageFile + '"/>' +
 			  '<div class="release-name">'+ rel.name + '</div>' +
