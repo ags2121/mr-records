@@ -10,7 +10,8 @@ var artists = [
 			type: 'LP',
 			year: 2017,
 			id: 'MR1',
-			track: 'Same Dream',
+			track: 'Easy Kill',
+			trackUrl: 'https://s3.amazonaws.com/mrrecords/easy_kill_sample.mp3',
 			tracks: 9
 		}
 		]
@@ -24,9 +25,10 @@ var artists = [
 			name: 'Gold Trim',
 			imageFile: 'gold_trim.jpg',
 			type: 'EP',
-			year: 2017,
+			year: 2018,
 			id: 'MR2',
 			track: 'Moving Walkway (Has Ended)',
+			trackUrl: 'https://s3.amazonaws.com/mrrecords/gold_trim_sample.mp3',
 			tracks: 3
 		}
 		]
@@ -38,11 +40,12 @@ var artists = [
 		releases:[
 		{
 			name: 'Cratersoft',
-			imageFile: 'loom.jpg',
+			imageFile: 'r1.png',
 			type: 'EP',
-			year: 2017,
+			year: 2018,
 			id: 'MR3',
 			track: 'Loom',
+			trackUrl: 'https://s3.amazonaws.com/mrrecords/loom_sample.mp3',
 			tracks: 3
 		}
 		]
@@ -54,11 +57,12 @@ var artists = [
 		releases:[
 		{
 			name: 'Invitation To Phuket',
-			imageFile: 'r1.png',
+			imageFile: 'ls_track.jpg',
 			type: 'EP',
-			year: 2017,
+			year: 2018,
 			id: 'MR4',
-			track: 'Max Berlin',
+			track: 'Biscoff Hunt',
+			trackUrl: 'https://s3.amazonaws.com/mrrecords/world_vibe_sample.mp3',
 			tracks: 3
 		}
 		]
@@ -72,9 +76,10 @@ var artists = [
 			name: 'Dolores',
 			imageFile: 'dolores.jpg',
 			type: 'EP',
-			year: 2017,
+			year: 2018,
 			id: 'MR5',
 			track: 'Dolores',
+			trackUrl: 'https://s3.amazonaws.com/mrrecords/dolores_sample.mp3',
 			tracks: 5
 		}
 		]

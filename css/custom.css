@@ -409,6 +409,10 @@ footer {
 	transition: all 0.6s ease-in-out;
 }
 
+audio {
+	display: none;
+}
+
 @media (max-width: 905px) {
 	.navbar-list {
 		display: block;

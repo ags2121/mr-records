@@ -7,15 +7,15 @@ var releases = [].concat.apply([], artists.map(function(el) {
 }));
 
 // sort by release date desc
-releases.sort(
-	function compare(a, b) {
-	  if (a.year > b.year)
-	    return -1;
-	  if (a.year < b.year)
-	    return 1;
-	  return 0;
-	}
-);
+// releases.sort(
+// 	function compare(a, b) {
+// 	  if (a.year > b.year)
+// 	    return -1;
+// 	  if (a.year < b.year)
+// 	    return 1;
+// 	  return 0;
+// 	}
+// );
 
 var releasesHtml = "";
 partition(releases.slice(), 3).forEach(function(releases) {
@@ -40,7 +40,7 @@ news.forEach(function(el) {
 	newsItem = 
 		"<li>" +
 			"<div class='title'>" + el.title + "</div>" +
-			"<small class='date'>Posted on " + formatDate(el.date) + "</small>" +
+			"<small class='date'>" + formatDate(el.date) + "</small>" +
 			"<div class='body'>" + el.body + "</div>" +
 		"</li>";
 	html += newsItem;
@@ -181,15 +181,41 @@ for (i = 0; i < controls.length; i++) {
 		// toggle currently clicked UI control state
 		playButton.classList[isPauseButtonHidden ? 'add' : 'remove']('hide');
 		pauseButton.classList[isPauseButtonHidden ? 'remove' : 'add']('hide');
-
-		var nowPlayingBar = document.querySelector('.now-playing');
+		
+		var releaseId = e.currentTarget.closest("[data-release]").getAttribute('data-release');
+		var currentRelease = releases.filter(function(el) { return el.id == releaseId })[0];
 		if (isPauseButtonHidden) {
-			releaseId = e.currentTarget.closest("[data-release]").getAttribute('data-release');
-			currentRelease = releases.filter(function(el) { return el.id == releaseId })[0];
+			var nowPlayingBar = document.querySelector('.now-playing');
 			nowPlayingBar.querySelector('.song').innerHTML = currentRelease.track;
 			nowPlayingBar.querySelector('.artist').innerHTML = currentRelease.artistName;
 			nowPlayingBar.querySelector('.album').innerHTML = currentRelease.name;
 		}
+
 		document.querySelector('.now-playing').classList[isPauseButtonHidden ? 'remove' : 'add']('hidden');
+
+		// play audio
+		var currentReleaseUrl = currentRelease.trackUrl;
+		var audioPlayer = document.querySelector('audio');
+		if (clickedSameAudio(audioPlayer, currentReleaseUrl)) {
+		  if (audioPlayer.paused) {
+		    audioPlayer.play();
+		  } else {    
+		    audioPlayer.pause();  
+		  }
+		} else {
+			playAudio(audioPlayer, currentReleaseUrl);
+		}
 	});
+}
+
+function clickedSameAudio(audioPlayer, audioUrl) {
+	return !audioPlayer.ended && (0 < audioPlayer.currentTime)
+	&& audioUrl === audioPlayer.querySelector('source').getAttribute('src');
+}
+
+function playAudio (audioPlayer, audioUrl) {
+	audioPlayer.querySelector('source').setAttribute('src', audioUrl);
+	audioPlayer.pause();
+	audioPlayer.load();
+	audioPlayer.oncanplaythrough = audioPlayer.play();
 }
