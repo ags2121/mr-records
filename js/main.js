@@ -175,19 +175,24 @@ function resetAudioControls() {
 var controls = document.querySelectorAll('.controls');
 for (i = 0; i < controls.length; i++) { 
 	controls[i].addEventListener('click', function (e) {
+		var releaseId = e.currentTarget.closest("[data-release]").getAttribute('data-release');
+		var currentRelease = releases.filter(function(el) { return el.id == releaseId })[0];
+
 		var pauseButton = e.currentTarget.querySelector('.wwfm-pauseoff');
+		var isPauseButtonHidden = e.currentTarget.querySelector('.wwfm-pauseoff').classList.contains('hide');
+
 		var playButton = e.currentTarget.querySelector('.wwfm-play');
-		var isPauseButtonHidden = pauseButton.classList.contains('hide');
 
 		// reset global UI control state
 		resetAudioControls();
 
-		// toggle currently clicked UI control state
-		playButton.classList[isPauseButtonHidden ? 'add' : 'remove']('hide');
-		pauseButton.classList[isPauseButtonHidden ? 'remove' : 'add']('hide');
+		// toggle all audio control state of currently clicked release
+
+		document.querySelectorAll('[data-release="' + releaseId + '"]').forEach(function(r) {
+			r.querySelector('.wwfm-pauseoff').classList[isPauseButtonHidden ? 'remove' : 'add']('hide');
+			r.querySelector('.wwfm-play').classList[isPauseButtonHidden ? 'add' : 'remove']('hide');
+		});
 		
-		var releaseId = e.currentTarget.closest("[data-release]").getAttribute('data-release');
-		var currentRelease = releases.filter(function(el) { return el.id == releaseId })[0];
 		if (isPauseButtonHidden) {
 			var nowPlayingBar = document.querySelector('.now-playing');
 			nowPlayingBar.querySelector('.song').innerHTML = currentRelease.track;
