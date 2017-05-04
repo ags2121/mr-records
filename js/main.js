@@ -167,6 +167,11 @@ return '<div class="controls">' +
 '</div>';
 }
 
+function resetAudioControls() {
+	document.querySelectorAll('.wwfm-play').forEach(function(e) { e.classList['remove']('hide');});
+	document.querySelectorAll('.wwfm-pauseoff').forEach(function(e) { e.classList['add']('hide');});
+}
+
 var controls = document.querySelectorAll('.controls');
 for (i = 0; i < controls.length; i++) { 
 	controls[i].addEventListener('click', function (e) {
@@ -175,8 +180,7 @@ for (i = 0; i < controls.length; i++) {
 		var isPauseButtonHidden = pauseButton.classList.contains('hide');
 
 		// reset global UI control state
-		document.querySelectorAll('.wwfm-play').forEach(function(e) { e.classList['remove']('hide');});
-		document.querySelectorAll('.wwfm-pauseoff').forEach(function(e) { e.classList['add']('hide');});
+		resetAudioControls();
 
 		// toggle currently clicked UI control state
 		playButton.classList[isPauseButtonHidden ? 'add' : 'remove']('hide');
@@ -207,6 +211,12 @@ for (i = 0; i < controls.length; i++) {
 		}
 	});
 }
+
+// reset all UI control state when audio ends
+document.querySelector('audio').addEventListener('ended', function () {
+	resetAudioControls();
+	document.querySelector('.now-playing').classList['add']('hidden');
+});
 
 function clickedSameAudio(audioPlayer, audioUrl) {
 	return !audioPlayer.ended && (0 < audioPlayer.currentTime)
