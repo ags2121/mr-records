@@ -2,7 +2,7 @@ var artists = [
 	{
 		name: 'Face of Man',
 		imageFile : 'fom.png',
-		about: 'Combining the raw elements of Raleigh\'s underground with the high minded ideals of the Transcendentalists, CR-39 dares you to dream big.',
+		about:  "Face of Man is a project of Alejandro Silva and his long time collaborator Jesse Chevan. They joined the Mr. Records family in 2017 as they searched for a home for their second LP <em>Bouquet<em>. In it, Face of Man continues it's project of pop maximalism - hear layering, high life inspired guitar against the subs and crackles of modern pop production - and explores the theme of female relationships and their variagated forms: the familial (as in \"Lavender\", about a dying mother, or \"Sola\", dedicated to unknown grandmother); the erotic (as in ), the romantic (). <em>Bouquet</em>, despite it's meloncholy, rewards the listener with it's lush, contrasting colors and with it's feeling of gradual unfolding.",
 		releases: [
 		{
 			name: 'Bouquet',
@@ -26,7 +26,7 @@ var artists = [
 			imageFile: 'gold_trim.jpg',
 			type: 'EP',
 			year: 2018,
-			id: 'MR2',
+			id: 'MR4',
 			track: 'Moving Walkway (Has Ended)',
 			trackUrl: 'https://s3.amazonaws.com/mrrecords/gold_trim_sample.mp3',
 			tracks: 3
@@ -43,7 +43,7 @@ var artists = [
 			imageFile: 'r1.png',
 			type: 'EP',
 			year: 2018,
-			id: 'MR3',
+			id: 'MR2',
 			track: 'Loom',
 			trackUrl: 'https://s3.amazonaws.com/mrrecords/loom_sample.mp3',
 			tracks: 3
@@ -60,7 +60,7 @@ var artists = [
 			imageFile: 'ls_track.jpg',
 			type: 'EP',
 			year: 2018,
-			id: 'MR4',
+			id: 'MR5',
 			track: 'Biscoff Hunt',
 			trackUrl: 'https://s3.amazonaws.com/mrrecords/world_vibe_sample.mp3',
 			tracks: 3
@@ -77,7 +77,7 @@ var artists = [
 			imageFile: 'dolores.jpg',
 			type: 'EP',
 			year: 2018,
-			id: 'MR5',
+			id: 'MR3',
 			track: 'Dolores',
 			trackUrl: 'https://s3.amazonaws.com/mrrecords/dolores_sample.mp3',
 			tracks: 5
