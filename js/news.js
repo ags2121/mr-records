@@ -2,7 +2,7 @@ var news = [
 	{
 		title: "Face of Man Announces New LP Out July 2017 on Mr. Records",
 		date: "05/11/2017",
-		body: "<em>Bouquet</em> is Face of Man's sophomore record and the first LP release for Mr. Records."
+		body: "<em>Bouquet</em> is Face of Man's sophomore full-length and the first LP release for Mr. Records."
 	},
 	{
 		title: "CR-39 Signs With Mr. Records",
