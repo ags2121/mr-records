@@ -2,7 +2,7 @@ var artists = [
 	{
 		name: 'Face of Man',
 		imageFile : 'fom.png',
-		about:  "Face of Man is a project of Alejandro Silva and his long time collaborator Jesse Chevan. They joined the Mr. Records family in 2017 as they searched for a home for their second LP <em>Bouquet</em>, recorded with the addition Evan Johnson (vocals, keyboards). In it Face of Man continues its project of pop maximalism - hear layering, high life inspired guitar against the subs and crackles of modern pop production - and explores the theme of female relationships and their variagated forms: the familial - a dying mother (\"Lavender\") and an unknown grandmother (\"Sola\"); the lustful - sex as a salve for anxiety (\"Take Me to the Place\") and the women to whom you are attracted despite yourself (\"Cast Her Gait\"); and the romantic - building strength through partnership (\"Easy Kill\", \"Her Vernacular\"). <em>Bouquet</em>, despite it's meloncholy, lifts the listener with lush, contrasting colors and an impression of gradual unfolding.",
+		about:  "Face of Man is a collaboration between Alejandro Silva, Jesse Chevan, and Evan Johnson. They joined the Mr. Records family in 2017 for their second LP, <em>Bouquet</em>. For their sophomore release Face of Man continues its project of pop maximalism - high life guitar layered over the subs and crackles of modern pop production, R&B vocal flights nestled into modular art rock structures - and plaintive, midwestern candor. Thematically, the LP explores female relationships and their variagated forms: the familial, the lustful, and the romantic. <em>Bouquet</em>, despite it's meloncholy, lifts the listener with lush, contrasting colors and an impression of gradual unfolding.",
 		releases: [
 		{
 			name: 'Bouquet',
