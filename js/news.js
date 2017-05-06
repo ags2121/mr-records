@@ -7,12 +7,12 @@ var news = [
 	{
 		title: "CR-39 Signs With Mr. Records",
 		date: "04/04/2017",
-		body: "Mr. Records warmly welcomes CR-39. His EP <em>Gold Trim</em>, \"a journey into mediated smoothness\" will be out in early 2018."
+		body: "Mr. Records warmly welcomes CR-39. His EP <em>Gold Trim</em>, \"a journey into mediated smoothness\", will be out in early 2018."
 	},
 	{
 		title: "Living Situ announces EP",
 		date: "02/06/2017",
-		body: "Living Situ's EP \"Invitation to Phuket\", a project of \"interposed global soundscapes\", is coming in early 2018.",
+		body: "Living Situ's EP <em>Invitation to Phuket</em>, a project of \"interposed global soundscapes\", is coming in early 2018.",
 	},
 	{
 		title: "Willem Porcelain, Joydeep Thomson announce EPs \"Cratersoft\" and \"Dolores\"",

@@ -197,6 +197,21 @@ a.popover-link {
     left: -999em;
 }
 
+.slide {
+	transition-duration: 600ms;
+	-webkit-transition-duration: 600ms;
+}
+
+.slide.left {
+	-webkit-transform: translate(-100%);
+	transform: translate(-100%);
+}
+
+.slide.right {
+	-webkit-transform: translate(100%);
+	transform: translate(100%);
+}
+
 .arrow-link {
 	display: block;
 }

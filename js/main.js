@@ -85,13 +85,17 @@ artists.forEach(function(artist, i) {
 	'<li id="artists/' + toId(artist.name) + '">' +
 		'<h5>'+ artist.name + '</h5>' +
 		'<div class="row">' +
-		  '<div class="two-thirds column">' +
 			'<img src="assets/'+  artist.imageFile + '"/>' +
-		  '</div>' +
-		  '<div class="one-third column">' +
-		    '<h6 class="">releases</h6>' +
-		    '<ul class="release-list">' + artistReleases + '</ul>' +
-		  '</div>' +
+		'</div>' +
+		'<div class="row">' +
+			'<div class="two-thirds column">' +
+				'<h6 class="">about</h6>' +
+				'<div>' + artist.about + '</div>' +
+			'</div>' +
+			'<div class="one-third column">' +
+				'<h6 class="">releases</h6>' +
+				'<ul class="release-list">' + artistReleases + '</ul>' +
+			'</div>' +
 		'</div>' +
 	'</li>';
 });
