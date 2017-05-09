@@ -36,7 +36,7 @@ var artists = [
 	{
 		name : 'Willem Porcelain',
 		imageFile : 'wp.png',
-		about: "Willem Porcelain makes music for the contemporary worker: sturdy, energizing, and marching precariously into the future. Porcelain came to Mr. Records with an aesthetic that grew together over the many vacant moments in this professional life. As a remote, traveling IT worker, Porcelain spent many hours on his laptop, attending to his far-flung clients with the esoteric network specifications that were his specialty. And while his total IT work hours were long, they were rarely contiguous, and his days could be filled equally with hours where his work was music. In <em>Cratersoft</em>, Willem's first EP for MRR, you can hear the mind of its creator in this state, darting between contexts, as if exchanging desktop panes or rearranging browser windows.",
+		about: "Willem Porcelain makes music for the contemporary worker: sturdy, energizing, and marching precariously into the future. Porcelain, a Mr. Records founder, arrived at an aesthetic that grew together over the many vacant moments in this professional life. As a remote, traveling IT worker, Porcelain spent many hours on his laptop, attending to his far-flung clients with the esoteric network specifications that were his specialty. And while his total IT work hours were long, they were rarely contiguous, and his days could be filled equally with hours where his work was music. In <em>Cratersoft</em>, Willem's first EP for MRR, you can hear the mind of its creator in this state, darting between contexts, as if exchanging desktop panes or rearranging browser windows.",
 		releases:[
 		{
 			name: 'Cratersoft',
@@ -70,7 +70,7 @@ var artists = [
 	{
 		name : 'Joydeep Thomson',
 		imageFile : 'jt_censored.jpg',
-		about: 'Mixes rudimentary digital sounds with found and open-source audio.',
+		about: "The music of Joydeep Thomson is unmistakably music of our current time (2017 as of this writing): airless, virtualized analog sounds; fragmented, open-source audio; the perceived alienation when those elements combine. Thomson, like many of his fellow “downwardly mobile millennials”, is fully a creature of online, that uncanny valley that provides for all manner of juxtapositions. The online that Thomson particularly inhabits is the one of limitless soft synths and unlicensed found-sound databases uploaded from all over the globe. His EP <em>Dolores</em> is a project to capture the tensions in those contrasting colors, but also to expose the sadness in that infinity, where all sounds, in their unceasing generativeness, are restless and ungrounded. Thomson, along with Willem Porcelain, is a founder of Mr. Records.",
 		releases: [
 		{
 			name: 'Dolores',
