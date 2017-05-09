@@ -36,7 +36,7 @@ var artists = [
 	{
 		name : 'Willem Porcelain',
 		imageFile : 'wp.png',
-		about: "Willem Porcelain makes music for the contemporary worker: sturdy, energizing, and marching precariously into the future. Porcelain came to Mr. Records with an aesthetic that grew together over the many vacant moments in this professional life. As a remote, traveling IT worker, Porcelain spent many hours on his laptop, attending to his far-flung clients with the esoteric network specifications that were his specialty. And while his total IT work hours were long, they were rarely contiguous, and his days could be filled equally with hours where his work was music. In <em>Cratersoft</em> you can hear the mind of it’s creator in this state, darting between contexts, as if exchanging desktop panes or rearranging browser windows.",
+		about: "Willem Porcelain makes music for the contemporary worker: sturdy, energizing, and marching precariously into the future. Porcelain came to Mr. Records with an aesthetic that grew together over the many vacant moments in this professional life. As a remote, traveling IT worker, Porcelain spent many hours on his laptop, attending to his far-flung clients with the esoteric network specifications that were his specialty. And while his total IT work hours were long, they were rarely contiguous, and his days could be filled equally with hours where his work was music. In <em>Cratersoft</em>, Willem's first EP for MRR, you can hear the mind of its creator in this state, darting between contexts, as if exchanging desktop panes or rearranging browser windows.",
 		releases:[
 		{
 			name: 'Cratersoft',
@@ -53,7 +53,7 @@ var artists = [
 	{
 		name : 'Living Situ',
 		imageFile : 'ls.jpg',
-		about: 'Captures the sounds of international travel and leisure.',
+		about: "As a man of leisure, most things in life came easy to Living Situ. The owner of a popular restaurant/entertainment venue, a business heavily delegated and optimized, his time was largely unencumbered by material exigencies. His few responsibilities centered around satisfying his business’s need to provide new experiences for their clientele, and so he was always abroad, collecting and reporting back cultural dispatches. Mr. Records first heard from Living Situ after his extended stays in Oaxaca City, Niigata, and the Isle of Man; he was now, perhaps finally, in Phuket and had, unsurprisingly, been up to something unrelated to business. His music turned into the MRR EP <em>Invitation to Phuket</em>, a globetrotting evocation of endless journies.",
 		releases:[
 		{
 			name: 'Invitation To Phuket',
