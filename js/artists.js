@@ -19,7 +19,7 @@ var artists = [
 	{
 		name : 'CR‑39',
 		imageFile : 'cr.jpg',
-		about: "Alternately described as \"Mallwave\" and \"Consumercore\", CR‑39 makes music for the American retail nostalgist. The project of Chris Lynch, he describes idling through Kmart's rows with his mother as a child, wide-eyed in those endless fonts of merchandise, passively absorbing the hushed drum of corporate music. It was these and other reminiscences of big-box Suburbia that birthed CR‑39 and its sonic template. In <em>Gold Trim</em>, CR‑39's debut EP for Mr. Records, Lynch wants listeners to experience the music not as songs necessarily, but as individual, flashbulb memories of purchasing an item on-sale; or that more modern feeling when a favorite TV series becomes, suddenly, available on a streaming service. <em>Gold Trim</em> packages and preserves the spirit of these older, physical retail spaces for the modern listener.",
+		about: "Alternately described as \"Mallwave\" and \"Consumercore\", CR‑39 makes music for the American retail nostalgist. The project of Chris Lynch, he describes idling through Kmart's rows with his mother as a child, wide-eyed at endless fonts of merchandise, passively absorbing the hushed drum of corporate music; these and other reminiscences of big-box Suburbia birthed the CR‑39 sonic template. In <em>Gold Trim</em>, CR‑39's debut EP for Mr. Records, Lynch wants listeners to experience the music not as songs necessarily, but as flashbulb memories of buying an on-sale item; or that more modern feeling of a favorite TV series becoming, suddenly, available on your streaming service. <em>Gold Trim</em> packages and preserves the spirit of these older, physical retail spaces for the modern listener.",
 		releases:[
 		{
 			name: 'Gold Trim',
@@ -36,7 +36,7 @@ var artists = [
 	{
 		name : 'Willem Porcelain',
 		imageFile : 'wp.png',
-		about: 'A digital man for a digital world.',
+		about: "Willem Porcelain makes music for the contemporary worker: sturdy, energizing, and marching precariously into the future. Porcelain came to Mr. Records with an aesthetic that grew together over the many vacant moments in this professional life. As a remote, traveling IT worker, Porcelain spent many hours on his laptop, attending to his far-flung clients with the esoteric network specifications that were his specialty. And while his total IT work hours were long, they were rarely contiguous, and his days could be filled equally with hours where his work was music. In <em>Cratersoft</em> you can hear the mind of it’s creator in this state, darting between contexts, as if exchanging desktop panes or rearranging browser windows.",
 		releases:[
 		{
 			name: 'Cratersoft',
