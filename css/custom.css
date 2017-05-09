@@ -197,19 +197,17 @@ a.popover-link {
     left: -999em;
 }
 
-.slide {
+img.slide {
+/*	position: absolute;*/
 	transition-duration: 600ms;
 	-webkit-transition-duration: 600ms;
+	opacity: 0;
 }
 
-.slide.left {
-	-webkit-transform: translate(-100%);
-	transform: translate(-100%);
-}
-
-.slide.right {
-	-webkit-transform: translate(100%);
-	transform: translate(100%);
+img.ondeck {
+	position: absolute;
+    z-index: -1;
+    left: 0;
 }
 
 .arrow-link {

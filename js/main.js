@@ -66,7 +66,8 @@ artists.forEach(function(artist, i) {
 
 	carouselHtml += 
 	'<a class="artist-image ' + ((i === 0) ? "onscreen" : "offscreen") + '" href="#artists/'+ toId(artist.name) +'">' + 
-		'<img src="assets/'+ artist.imageFile + '"/>' + 
+		'<img class="current" src="assets/'+ artist.imageFile + '"/>' + 
+		'<img class="ondeck" src="assets/'+ artist.imageFile + '"/>' + 
 	'</a>';
 
 	artistReleases = "";
@@ -104,7 +105,6 @@ document.querySelector('.popover-list').innerHTML = artistPopoverHtml;
 document.querySelector('.carousel').innerHTML += carouselHtml;
 document.querySelector('.artist-list').innerHTML = artistListHtml;
 
-
 function toId(name) {
 	return name.split(" ").join("-");
 }
@@ -136,7 +136,8 @@ for (i = 0; i < arrows.length; i++) {
 	arrows[i].addEventListener('click', function (e) { 
 		e.preventDefault();
 		var currentImage = document.querySelectorAll('.carousel .artist-image')[index];
-		if (e.currentTarget.classList.contains('left')) {
+		var doSlideLeft = e.currentTarget.classList.contains('left');
+		if (doSlideLeft) {
 			index--;
 			if (index < 0) {
 				index = artists.length-1;
@@ -151,12 +152,20 @@ for (i = 0; i < arrows.length; i++) {
 		document.querySelector('.carousel .artist-info').href = '#artists/' + toId(artists[index].name);
 		document.querySelector('.carousel .artist-name').innerHTML = artists[index].name;
 
-		currentImage.classList.add('offscreen');
-		currentImage.classList.remove('onscreen');
-
 		nextImage = document.querySelectorAll('.carousel .artist-image')[index];
-		nextImage.classList.add('onscreen');
-		nextImage.classList.remove('offscreen');
+		nextImageImgSrc = nextImage.querySelector('img').getAttribute('src')
+
+		var currentImageImg = currentImage.querySelector('img.current');
+		var ondeckImageImg = currentImage.querySelector('img.ondeck');
+
+		ondeckImageImg.setAttribute('src', nextImageImgSrc);
+		currentImageImg.classList.add('slide');
+
+		setTimeout(function() {
+			currentImage.classList.add('offscreen');
+			currentImageImg.classList.remove('slide');
+			nextImage.classList.remove('offscreen');
+		 }, 600);
 	});
 }
 
