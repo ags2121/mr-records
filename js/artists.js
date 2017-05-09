@@ -69,7 +69,7 @@ var artists = [
 	},
 	{
 		name : 'Joydeep Thomson',
-		imageFile : 'jt.jpg',
+		imageFile : 'jt_censored.jpg',
 		about: 'Mixes rudimentary digital sounds with found and open-source audio.',
 		releases: [
 		{

@@ -105,80 +105,56 @@ document.querySelector('.popover-list').innerHTML = artistPopoverHtml;
 document.querySelector('.carousel').innerHTML += carouselHtml;
 document.querySelector('.artist-list').innerHTML = artistListHtml;
 
-function toId(name) {
-	return name.split(" ").join("-");
-}
-
-function formatDate(dateStr) {
-	var monthNames = [
-	  "January", "February", "March",
-	  "April", "May", "June", "July",
-	  "August", "September", "October",
-	  "November", "December"
-	];
-
-	var date = new Date(dateStr);
-	var day = date.getDate();
-	var monthIndex = date.getMonth();
-	var year = date.getFullYear();
-
-	return day + ' ' + monthNames[monthIndex] + ' ' + year
-}
-
-function partition(array, n) {
-	return array.length ? [array.splice(0, n)].concat(partition(array, n)) : [];
-}
-
-// Carousel event handlers
+// CAROUSEL EVENT HANDLERS
 var index = 0;
 var arrows = document.querySelectorAll('.arrow');
 for (i = 0; i < arrows.length; i++) { 
-	arrows[i].addEventListener('click', function (e) { 
+	arrows[i].addEventListener('click', function (e) {
 		e.preventDefault();
-		var currentImage = document.querySelectorAll('.carousel .artist-image')[index];
 		var doSlideLeft = e.currentTarget.classList.contains('left');
-		if (doSlideLeft) {
-			index--;
-			if (index < 0) {
-				index = artists.length-1;
-			}
-		} else {
-			index++;
-			if (index > artists.length-1) {
-				index = 0;
-			}
-		}
-
-		document.querySelector('.carousel .artist-info').href = '#artists/' + toId(artists[index].name);
-		document.querySelector('.carousel .artist-name').innerHTML = artists[index].name;
-
-		nextImage = document.querySelectorAll('.carousel .artist-image')[index];
-		nextImageImgSrc = nextImage.querySelector('img').getAttribute('src')
-
-		var currentImageImg = currentImage.querySelector('img.current');
-		var ondeckImageImg = currentImage.querySelector('img.ondeck');
-
-		ondeckImageImg.setAttribute('src', nextImageImgSrc);
-		currentImageImg.classList.add('slide');
-
-		setTimeout(function() {
-			currentImage.classList.add('offscreen');
-			currentImageImg.classList.remove('slide');
-			nextImage.classList.remove('offscreen');
-		 }, 600);
+		slideCarousel(doSlideLeft);
 	});
 }
 
+function slideCarousel(doSlideLeft) { 
+	var currentImage = document.querySelectorAll('.carousel .artist-image')[index];
+	if (doSlideLeft) {
+		index--;
+		if (index < 0) {
+			index = artists.length-1;
+		}
+	} else {
+		index++;
+		if (index > artists.length-1) {
+			index = 0;
+		}
+	}
+
+	document.querySelector('.carousel .artist-info').href = '#artists/' + toId(artists[index].name);
+	document.querySelector('.carousel .artist-name').innerHTML = artists[index].name;
+
+	nextImage = document.querySelectorAll('.carousel .artist-image')[index];
+	nextImageImgSrc = nextImage.querySelector('img').getAttribute('src')
+
+	var currentImageImg = currentImage.querySelector('img.current');
+	var ondeckImageImg = currentImage.querySelector('img.ondeck');
+
+	ondeckImageImg.setAttribute('src', nextImageImgSrc);
+	currentImageImg.classList.add('slide');
+
+	setTimeout(function() {
+		currentImage.classList.add('offscreen');
+		currentImageImg.classList.remove('slide');
+		nextImage.classList.remove('offscreen');
+	 }, 600);
+};
+var autoSlideId = setInterval(slideCarousel, 5000);
+
+// FOOTER
+
 document.querySelectorAll('.copyright-date')[0].innerHTML = new Date().getFullYear();
 
-// SHARED (vars+fns)
-function getTrackControls(numberOfTracks) {
-return '<div class="controls">' +
-	'<i class="wwfm-play"></i>' +
-	'<i class="wwfm-pauseoff hide"></i> ' +
-	'<small>1 (of ' + numberOfTracks + ') Tracks</small>' +
-'</div>';
-}
+// AUDIO CONTROL HANDLERS
 
 function resetAudioControls() {
 	document.querySelectorAll('.wwfm-play').forEach(function(e) { e.classList['remove']('hide');});
@@ -241,9 +217,43 @@ function clickedSameAudio(audioPlayer, audioUrl) {
 	&& audioUrl === audioPlayer.querySelector('source').getAttribute('src');
 }
 
-function playAudio (audioPlayer, audioUrl) {
+function playAudio(audioPlayer, audioUrl) {
 	audioPlayer.querySelector('source').setAttribute('src', audioUrl);
 	audioPlayer.pause();
 	audioPlayer.load();
 	audioPlayer.oncanplaythrough = audioPlayer.play();
+}
+
+// SHARED (vars+fns)
+
+function toId(name) {
+	return name.split(" ").join("-");
+}
+
+function formatDate(dateStr) {
+	var monthNames = [
+	  "January", "February", "March",
+	  "April", "May", "June", "July",
+	  "August", "September", "October",
+	  "November", "December"
+	];
+
+	var date = new Date(dateStr);
+	var day = date.getDate();
+	var monthIndex = date.getMonth();
+	var year = date.getFullYear();
+
+	return day + ' ' + monthNames[monthIndex] + ' ' + year
+}
+
+function partition(array, n) {
+	return array.length ? [array.splice(0, n)].concat(partition(array, n)) : [];
+}
+
+function getTrackControls(numberOfTracks) {
+return '<div class="controls">' +
+	'<i class="wwfm-play"></i>' +
+	'<i class="wwfm-pauseoff hide"></i> ' +
+	'<small>1 (of ' + numberOfTracks + ') Tracks</small>' +
+'</div>';
 }
