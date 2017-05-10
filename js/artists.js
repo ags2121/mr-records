@@ -3,6 +3,7 @@ var artists = [
 		name: 'Face of Man',
 		imageFile : 'fom.png',
 		about:  "Face of Man is a collaboration between Alejandro Silva, Jesse Chevan, and Evan Johnson. They joined the Mr. Records family in 2017 for their second LP, <em>Bouquet</em>. For their sophomore release Face of Man continues its project of pop maximalism - high life guitar layered over the subs and crackles of modern pop production, R&B vocal flights nestled into modular art rock structures - and plaintive, midwestern candor. Thematically, the LP explores female relationships and their variagated forms: the familial, the lustful, and the romantic. <em>Bouquet</em>, despite it's meloncholy, lifts the listener with lush, contrasting colors and an impression of gradual unfolding.",
+		social: [{'name': 'soundcloud', 'url': 'https://soundcloud.com/faceofman'}, {'name': 'twitter', 'url': 'https://twitter.com/faceofmanband'}],
 		releases: [
 		{
 			name: 'Bouquet',
@@ -20,6 +21,7 @@ var artists = [
 		name : 'CR‑39',
 		imageFile : 'cr.jpg',
 		about: "Alternately described as \"Mallwave\" and \"Consumercore\", CR‑39 makes music for the American retail nostalgist. The project of Chris Lynch, he describes idling through Kmart's rows with his mother as a child, wide-eyed at endless fonts of merchandise, passively absorbing the hushed drum of corporate music; these and other reminiscences of big-box Suburbia birthed the CR‑39 sonic template. In <em>Gold Trim</em>, CR‑39's debut EP for Mr. Records, Lynch wants listeners to experience the music not as songs necessarily, but as flashbulb memories of buying an on-sale item; or that more modern feeling of a favorite TV series becoming, suddenly, available on your streaming service. <em>Gold Trim</em> packages and preserves the spirit of these older, physical retail spaces for the modern listener.",
+		social: [{'name': 'soundcloud', 'url': 'https://soundcloud.com/cr-39'}],
 		releases:[
 		{
 			name: 'Gold Trim',
@@ -37,6 +39,7 @@ var artists = [
 		name : 'Willem Porcelain',
 		imageFile : 'wp.png',
 		about: "Willem Porcelain makes music for the contemporary worker: focused, frenetic, and marching precariously into the future. Porcelain arrived at his aesthetic over the many vacant moments in his professional life. As an on-call IT worker, Porcelain spent most of his time on his laptop, making his knowledge available on demand to his far-flung clients. Of course, his business tools being co-located with his musical tools, his days were filled equally with hours where his work was music. In <em>Cratersoft</em>, Porcelain's first EP for MRR, you can hear the mind of its creator in this state, darting between contexts, as if exchanging desktop panes or rearranging browser windows. Porcelain, along with Joydeep Thomson, is a founder of Mr. Records.",
+		social: [{'name': 'soundcloud', 'url': 'https://soundcloud.com/ailsa_music'}],
 		releases:[
 		{
 			name: 'Cratersoft',
@@ -53,7 +56,7 @@ var artists = [
 	{
 		name : 'Living Situ',
 		imageFile : 'ls.jpg',
-		about: "The musical story of Living Situ is one of lesirely, incidental curation. An owner of a popular restaurant, his main responsibility was to provide new, exotic experiences for his clientele, and so he was often abroad, collecting cultural dispatches in various mediums. Living Situ first connected with Mr. Records at the culmination of his first audio travelogue, the EP <em>Invitation to Phuket</em>. In it you’ll hear a voracious ear, an evocation of an endless journey.",
+		about: "The musical story of Living Situ is one of lesirely, incidental curation. An owner of a popular restaurant, his main responsibility was to provide new, exotic experiences for his clientele, and so he was often abroad, collecting cultural dispatches in various mediums. Living Situ first connected with Mr. Records at the culmination of his first audio travelogue culled from these excursions, the EP <em>Invitation to Phuket</em>. In the record you hear a voracious ear, globally sourced found sounds, and the evocation of endless journeys.",
 		releases:[
 		{
 			name: 'Invitation To Phuket',

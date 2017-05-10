@@ -92,6 +92,7 @@ artists.forEach(function(artist, i) {
 			'<div class="two-thirds column">' +
 				'<h6 class="">about</h6>' +
 				'<div>' + artist.about + '</div>' +
+				renderSocialLinks(artist.social) +
 			'</div>' +
 			'<div class="one-third column">' +
 				'<h6 class="">releases</h6>' +
@@ -100,6 +101,17 @@ artists.forEach(function(artist, i) {
 		'</div>' +
 	'</li>';
 });
+
+function renderSocialLinks(socialLinks) {
+	if (!socialLinks) {
+		return '';
+	}
+	sHtml = '';
+	socialLinks.forEach(function(link) {
+		sHtml += '<a class="external" href="' + link.url + '" target="_blank"><small>' + link.name + '</small></a> '
+	});
+	return sHtml;
+}
 
 document.querySelector('.popover-list').innerHTML = artistPopoverHtml;
 document.querySelector('.carousel').innerHTML += carouselHtml;

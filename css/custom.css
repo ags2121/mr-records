@@ -107,6 +107,11 @@ a {
 	text-decoration: none;
 }
 
+a.external {
+	color: #1EAEDB;
+	font-weight: 900;
+}
+
 a:hover {
 	color: gray;
 }

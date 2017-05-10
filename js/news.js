@@ -22,6 +22,6 @@ var news = [
 	{
 		title: "Say Hello to Mr. Records",
 		date: "01/01/2016",
-		body: "It's a New Year and Mr. Records is finally ready to say <em>Hello World</em>. Stay tuned for music from Joydeep Thomson, Willem Porcelain, Living Situ, Face of Man, and more. Please follow Mr. Records on <a href='https://twitter.com/mister_records'>Twitter</a> and <a href='https://soundcloud.com/mr-records-records'>Soundcloud</a> :)"
+		body: "It's a New Year and Mr. Records is finally ready to say <em>Hello World</em>. Stay tuned for music from Joydeep Thomson, Willem Porcelain, Living Situ, Face of Man, and more. Please follow Mr. Records on <a class='external' href='https://twitter.com/mister_records'>Twitter</a> and <a class='external' href='https://soundcloud.com/mr-records-records'>Soundcloud</a> :)"
 	}
 ]
