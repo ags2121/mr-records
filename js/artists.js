@@ -38,8 +38,8 @@ var artists = [
 	{
 		name : 'Willem Porcelain',
 		imageFile : 'wp.png',
-		about: "Willem Porcelain makes music for the contemporary worker: focused, frenetic, and marching precariously into the future. Porcelain arrived at his aesthetic over the many vacant moments in his professional life. As an on-call IT worker, Porcelain spent most of his time on his laptop, making his knowledge available on demand to his far-flung clients. Of course, his business tools being co-located with his musical tools, his days were filled equally with hours where his work was music. In <em>Cratersoft</em>, Porcelain's first EP for MRR, you can hear the mind of its creator in this state, darting between contexts, as if exchanging desktop panes or rearranging browser windows. Porcelain, along with Joydeep Thomson, is a founder of Mr. Records.",
-		social: [{'name': 'soundcloud', 'url': 'https://soundcloud.com/ailsa_music'}],
+		about: "The breezy similacra that Willem Porcelain tenders is the product of one kind of classic Southern California upbringing, tracks that can be described as poolside video game music. <em>Cratersoft</em>, Porcelain's first EP for MRR, transports you along wide open virtual roads; a shining, pixelated sun overhead; gameplay on loop. Porcelain, along with Joydeep Thomson, is a founder of Mr. Records.",
+		social: [{'name': 'soundcloud', 'url': 'https://soundcloud.com/willem_porcelain'}],
 		releases:[
 		{
 			name: 'Cratersoft',
