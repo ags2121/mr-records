@@ -2,7 +2,7 @@ var artists = [
 	{
 		name: 'Face of Man',
 		imageFile : 'fom.png',
-		about:  "Face of Man is a collaboration between Alejandro Silva, Jesse Chevan, and Evan Johnson. They joined the Mr. Records family in 2017 for their second LP, <em>Bouquet</em>. For their sophomore release Face of Man continues its project of pop maximalism - high life guitar layered over the subs and crackles of modern pop production, R&B vocal flights nestled into modular art rock structures - with a plaintive, midwestern candor. Thematically, the LP explores female relationships and their variagated forms: the familial, the lustful, and the romantic. <em>Bouquet</em>, despite it's meloncholy, lifts the listener with lush, contrasting colors and an impression of gradual unfolding.",
+		about:  "Face of Man is a collaboration between Alejandro Silva, Jesse Chevan, and Evan Johnson. They joined the Mr. Records family in 2017 for their second LP, <em>Bouquet</em>. For their sophomore release Face of Man continues its project of pop maximalism - high life guitar layered over the subs and crackles of modern pop production, R&B vocal flights nestled into modular art rock structures - with a plaintive, midwestern candor. Thematically, the LP explores female relationships and their variegated forms: the familial, the lustful, and the romantic. <em>Bouquet</em>, despite it's melancholy, lifts the listener with lush, contrasting colors and an impression of gradual unfolding.",
 		social: [{'name': 'soundcloud', 'url': 'https://soundcloud.com/faceofman'}, {'name': 'twitter', 'url': 'https://twitter.com/faceofmanband'}],
 		releases: [
 		{
