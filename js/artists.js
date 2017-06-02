@@ -38,7 +38,7 @@ var artists = [
 	{
 		name : 'Willem Porcelain',
 		imageFile : 'wp.png',
-		about: "The breezy similacra that Willem Porcelain tenders is the product of one kind of classic Southern California upbringing, tracks that can be described as poolside video game music. <em>Cratersoft</em>, Porcelain's first EP for MRR, transports you along wide open virtual roads; a shining, pixelated sun overhead; gameplay on loop. Porcelain, along with Joydeep Thomson, is a founder of Mr. Records.",
+		about: "The breezy simulacra that Willem Porcelain tenders is the product of one kind of classic Southern California upbringing, tracks that can be described as poolside video game music. <em>Cratersoft</em>, Porcelain's first EP for MRR, transports you along wide open virtual roads; a shining, pixelated sun overhead; gameplay on loop. Porcelain, along with Joydeep Thomson, is a founder of Mr. Records.",
 		social: [{'name': 'soundcloud', 'url': 'https://soundcloud.com/willem_porcelain'}],
 		releases:[
 		{
@@ -56,7 +56,7 @@ var artists = [
 	{
 		name : 'Living Situ',
 		imageFile : 'ls.jpg',
-		about: "The musical story of Living Situ is one of lesirely, incidental curation. An owner of a popular restaurant, his main responsibility was to provide new, exotic experiences for his clientele, and so he was often abroad, collecting cultural dispatches in various mediums. Living Situ first connected with Mr. Records at the culmination of his first audio travelogue culled from these excursions, the EP <em>Invitation to Phuket</em>. In the record you hear a voracious ear, globally sourced found sounds, and the evocation of endless journeys.",
+		about: "The musical story of Living Situ is one of leisurely, incidental curation. An owner of a popular restaurant, his main responsibility was to provide new, exotic experiences for his clientele, and so he was often abroad, collecting cultural dispatches in various mediums. Living Situ first connected with Mr. Records at the culmination of his first audio travelogue culled from these excursions, the EP <em>Invitation to Phuket</em>. In the record you hear a voracious ear, globally sourced found sounds, and the evocation of endless journeys.",
 		releases:[
 		{
 			name: 'Invitation To Phuket',
