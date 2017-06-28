@@ -44,7 +44,7 @@ var artists = [
 		releases:[
 		{
 			name: 'Cratersoft',
-			imageFile: 'r1.png',
+			imageFile: 'r11.png',
 			type: 'EP',
 			year: 2018,
 			id: 'MR2',
