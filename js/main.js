@@ -162,6 +162,24 @@ function slideCarousel(doSlideLeft) {
 };
 var autoSlideId = setInterval(slideCarousel, 5000);
 
+// STORE
+releasesForSale = releases.filter(function (unit) {return unit['buyUrl']});
+var storeHtml = "";
+partition(releasesForSale.slice(), 3).forEach(function(releases) {
+	var release_group = '<div class="row"><ul class="release-list">';
+	releases.forEach(function(r) {
+		release_group +=
+		'<a href="' + r.buyUrl + '" target="_blank"><li class="one-third column for-sale" data-release="' + r.id + '">' +
+			'<img src="assets/' + r.imageFile + '"/>' +
+			'<div class="artist-name">' + r.artistName + '</div>' +
+			'<div class="release-name">' + r.name + '</div>' +
+		'</li></a>';
+	});
+	release_group += '</ul></div>';
+	storeHtml += release_group;
+});
+document.querySelector('.titles').innerHTML = storeHtml;
+
 // FOOTER
 
 document.querySelectorAll('.copyright-date')[0].innerHTML = new Date().getFullYear();

@@ -10,6 +10,7 @@ var artists = [
 			imageFile: 'bouquet.jpg',
 			type: 'LP',
 			year: 2017,
+			buyUrl: 'https://faceofman.bandcamp.com/album/bouquet',
 			id: 'MR1',
 			track: 'Lavender',
 			trackUrl: 'https://s3.amazonaws.com/mrrecords/lavender_sample.mp3',
