@@ -11,8 +11,8 @@ var artists = [
 			type: 'LP',
 			year: 2017,
 			id: 'MR1',
-			track: 'Easy Kill',
-			trackUrl: 'https://s3.amazonaws.com/mrrecords/easy_kill_sample.mp3',
+			track: 'Lavender',
+			trackUrl: 'https://s3.amazonaws.com/mrrecords/lavender_sample.mp3',
 			tracks: 9
 		}
 		]
