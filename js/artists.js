@@ -7,7 +7,7 @@ var artists = [
 		releases: [
 		{
 			name: 'Bouquet',
-			imageFile: 'bouquet.jpg',
+			imageFile: 'bouquet.png',
 			type: 'LP',
 			year: 2017,
 			buyUrl: 'https://faceofman.bandcamp.com/album/bouquet',
