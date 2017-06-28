@@ -169,7 +169,7 @@ partition(releasesForSale.slice(), 3).forEach(function(releases) {
 	var release_group = '<div class="row"><ul class="release-list">';
 	releases.forEach(function(r) {
 		release_group +=
-		'<a href="' + r.buyUrl + '" target="_blank"><li class="one-third column for-sale" data-release="' + r.id + '">' +
+		'<a href="' + r.buyUrl + '" target="_blank"><li class="one-third column for-sale">' +
 			'<img src="assets/' + r.imageFile + '"/>' +
 			'<div class="artist-name">' + r.artistName + '</div>' +
 			'<div class="release-name">' + r.name + '</div>' +
